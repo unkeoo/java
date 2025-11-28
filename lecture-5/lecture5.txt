@@ -1,0 +1,73 @@
+steps
+1. Write the source code
+2. compile ---> bytecode(understood by java virutal machine)
+3. run
+
+To compile
+1. open the terminal in VS code
+2. command to compile is called javac then write ur file name
+
+What java does
+1.Checks your syntax (capitalisation etc semicolon)
+2. if there is errors (even one) java will not turn it into bytecode
+3.when java makes bytecode it names it makes a seperate extension called .class
+
+3 THINGS ABOUT bytecode
+1.extension is called .class
+2.name -- same name as class name (the one you have created)
+3. the number of classes the user has defined for eg (5), there will also be 5 bytecode
+
+shortcut to open terminal - Ctrl+~
+
+Syntax to run inside the terminal
+java Main class(sca used Test )
+
+comparing C language with java
+C- uses a header file #include <stdio.h>
+java-no header file , keeps classes in packages (jdk folders)
+java 25 (has more than 225 packages, around 4.5k classes)
+
+java adds java.lang class autmatically
+(import java.lang.*;) at the top of ur code
+
+Important interview question
+in C 
+====
+
+#include <stdio.h>
+int main()
+{
+    printf("Hello");
+    return 0;
+}
+// here it appears to be 6 lines of code but its actually around 450 because of all the imported functions from #include <stdio.h>
+
+
+In java
+====
+
+class Test
+{
+    public static void main(String [] args)
+
+{
+System.out.println("Hello User");
+}
+}
+
+(java only calls however many it needs not like c)
+
+
+
+-students make a common mistake writing String in lowercase
+
+println- makes a line after ENDING of println command
+if you want it all in the same line write print and not println
+
+\n- is called a escape sequence (will be explained in next lecture)(just like its used in c lang)
+
+print always requires an argument, but println does not
+
+
+
+

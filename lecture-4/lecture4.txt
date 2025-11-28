@@ -1,0 +1,77 @@
+Developing java programs (two main)
+1 Vs code
+2 IntelliJ IDEA/eclipse/netbeans
+
+
+installing vs code
+(folder process)
+how to open a folder from drives in vs code
+installing two extensions
+(prettier,language support for java)
+prettier-manages spaces, indents managed,makes it look better by auto formatting
+language support- syntax support
+
+
+difference between vs code and using an ide like netbeans/eclipse/IntelliJ idea etc
+Vs CODE
+-Using vs code-typing the code in vs code and running it through command prompt.
+-good for beginners for learning each step thoroughly
+
+Using an IDE
+-should be used after we have understood the basic working of java
+- IDE hides all the basic steps which are important to understand(not reccomended for beginners)
+
+Developing java programs in vs code
+1. writing source code
+2. compling the code
+(conversion from source code to bytecode by the java compiler)
+3. execute the code
+(interpration of the bytecode by the jvm)
+
+ SPECIAL NOTE REGARDING JAVA 25
+ in 25  we can write the program in 2 ways;
+ - Using the regular/traditional syntax.
+ - Using new syntax called compact source files , introduced by java 25.
+ -Intitally we will follow the traditional way and afterwords 
+
+
+ class Test
+ {
+    public static void main(String [ ]args)
+ {
+       System.out.println("Hello user");
+ }
+ }
+
+ Class- a block of code
+ - you can name the class anything (here its Test)
+not compulsary but you should name the file and class the same for the best practice
+ {- block opening bracket
+ }-block cosing bracket
+ public- access modifier 
+ static- non access modifier
+ void- return type
+ main-method
+ method-collection of statements
+
+ JVM executes the code (starts from main) main-entry point
+code can compile without main but wont run
+
+Java inherited by c and c++
+
+SOUT- command line argument
+if anything is capitalised its a class made by java(pre defined class)
+[]- array symbol
+args and square brackets are inter changable 
+ args full form- argument String
+ main closing and opening brace-
+inside main^- System.out.println("Hello User);
+System- pre defined class
+out-object reference
+println-method
+
+(DONT TYPE ANYTHING WRITTEN IN GREY)
+
+;- statement terminator
+
+

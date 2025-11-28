@@ -1,0 +1,60 @@
+Type conversion
+==============
+if i say 
+int a=10;
+a=b;
+then b= will also be 10
+
+Type conversion is the process wihcih gets applied when we use ASSIGNMENT OPERATOR between variables of 2 different data types 
+
+types of conversion
+1. Implicit conversion(automatically done by java compiler)
+
+2.Explicit conversion(coversion done by programmer, also called by type casting)
+
+
+rules for implicit conversion 
+1.values must be compatible
+example 1. 
+int x;
+x='A';---------------(unicode is 65)
+//this conversion works because char and int are compatible
+
+example 2.
+int x;
+
+x=true;
+// this conversion doesnt work because boolean cannot be converted to int(incompatible types)
+(BOOLEAN IS NOT COMPATIBLE WITYH ANY OTHER DATA TYPES)
+2. the value on RHS of assignment operator must be of smaller type than the variable on LHS
+
+
+
+
+int 4b- -2147483648 to 2147483647
+float 4b - 3.4 * 10^38 to 3.4 * 10 ^38
+long 8b - -9223372036254775808 to 9223372036254775807 
+float 4b - -3.4*10^38 to 3.4 * 10^38 
+
+
+rules for Explicit conversion var_name=(data_type)value;
+
+int x;
+x=(int)7.4;
+
+
+example for Explicit coversion
+x=(byte)a;
+
+if you use a number outside the range there will be data loss, for example
+int x = 128;
+byte a;
+a=x;
+value will print as -128
+
+
+
+
+
+
+
