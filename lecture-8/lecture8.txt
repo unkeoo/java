@@ -1,0 +1,26 @@
+type conversion for more data types
+
+computer cannot exactly represent decimal values. they use approximation for it 
+
+byte b= 10; (10 being a int constant)
+(this works ^)
+
+float a = 1.7
+(this doesnt work ^)
+
+hardware cannot produce infinite values so it uses approximation
+
+public class Example2 {
+    public static void main(String [] args) {
+        System.out.printlm(0.1+0.2);
+    }
+}
+
+output is 0.30000000000000004
+
+common problem for all languages
+
+-if you want to make it a float you need to add capital f or small f at the end , 1.7f; or 1.7F;  (suffix declaration) or float a = (float) 1.7; (type casting or Explicit conversion)
+
+
+

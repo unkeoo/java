@@ -1,0 +1,61 @@
+boolean isnt compatible with any other data types (again)
+
+order of ranges -
+bytes 
+short
+char (ONLY IN POSITIVE RANGE)
+int
+long
+float
+double
+boolean- doesnt convert to these integer or char data types ( seperate)
+
+
+
+Types of Type conversion 
+
+1. Type conversion in Assignment
+
+2. Type conversion in expresson ( Type Promotion )
+
+in the programming world expression is when operator and operand are included
+ 2+3 is an expression
+
+
+^ Any statement that contains operand and operator
+
+conversion rule is only for EXPRESSIONS
+
+byte a = 10;
+byte b = 20;
+byte c;
+c = a + b;
+sout c;
+error
+
+
+
+
+Operators
+ operators are those symbls using which we can perform various operation
+ ex : +,*,/ etc 
+
+ types of operators
+
+ 1 arthmetic
+ 2 relational
+ 3 logical
+ 4 shorthand
+ 5 increment decrement
+ 6 Assignment
+
+
+ arthmetic 
+ ==========
+
+ 1 +
+ 2 - 
+ 3 *
+ 4 /
+ 5 % (mod, calcs remainder)
+ 

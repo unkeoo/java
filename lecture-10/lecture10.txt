@@ -1,0 +1,183 @@
+
+Relational Operators
+==============================
+ >
+ <
+ <=
+ >=
+ ==
+ !=
+
+ 1. they all are used to check conditions
+ 2.They always return their answer as true and false
+Example
+1 System.out.println(5>3);true
+2.System.out.println(6<4); false
+^called boolean expression
+
+if you write 
+int a=7,b=10;
+a=b;
+it will become 10
+
+
+== is an equality testing operator (people also call it comparison operator)
+
+int a=7,b=10;
+boolean c;
+c= a==b;
+false
+
+just like math has pemdas, java has precedence
+
+Logicial operators
+===================
+
+&& Logical and
+
+|| Logical or
+
+! Logical not
+
+In java you can omly use one relational operator in an expression
+
+
+Logical and
+===========
+ 1. if cond1 && cond2 are both true result is true
+ 2. if cond1 && cond2 are true and false result is false
+ 3. if both are false result is also false
+
+ int a=10,b=5,c=15;
+  System.out.println(a>b && b>c);
+  false
+
+
+ Logical or
+1.if con1 || cond2 are true and false result is true
+2. if cond1 || cond 2 are true result is true
+3. if both cond are false result is also false
+
+int a=10,b=5,c=15;
+  System.out.println(a>b || b>c);
+  true
+
+
+
+  Logical not
+  flips the values
+  1.true ---> false
+  2. false ----> true
+  3. ONLY WORKS WITH BOOLEAN
+
+  boolean a=true;
+ System.out.println ( !a);
+ false
+
+ Short Hand Operators
+ ===================
+
+ also known as compound operator
+ +=
+ -=
+ *=
+/=
+%=
+
+Example
+
+1 a=a+b;
+or a+=b;
+
+2 x=x-y;
+or 
+x-=y;
+  
+
+  Increment/Decrement Operators
+   
+   a=a+1; (a++; or ++a;)
+
+   a++; is a post increment operator
+   ++a; is a pre increment operator
+   there is no difference between these two IF if the expression is in isolation
+
+   1. int a=10; 
+   a++;
+   sop(a);
+   11
+
+   2. int a=10;
+   ++a;
+   sop(a);
+   11
+
+   3. int a = 10, b;
+    b=a++;
+    sop(a);
+    sop(b);
+     a=11
+     b=10
+
+     4. int a = 10, b;
+    b=++a;
+    sop(a);
+    sop(b);
+     a=10
+     b=11
+      
+
+      Post / Pre decrement operator (same as above)
+
+      + also joins strings in java in addition to being used arthmetically
+
+      anything concatenated with a string is a string
+
+      
+JAVA WORKS LEFT TO RIGHT, SO FOR Example
+
+1. 10+5      = 15
+2. "Good"+"Morning"   = GoodMorning
+3. "Good"+10      = Good10
+4. "Good"+10+20    =  Good1020
+5. 10+20+"Good"    = 30Good
+6. "Good" + (10+20)  = Good30
+^ Associativity
+
+
+types of variables 
+============================
+1. Local Variables;
+Declared inside a method body . 
+They DO NOT HAVE ANY DEFAULT VALUE.
+
+2. Instance Variable;
+Declared inside a CLASS ( WE will leanr this in OOP)
+They DO HAVE DEFAULT VALUE.
+        Int ------>0
+        float ------> 0.0f
+        double------->0.0
+        boolean--->false
+        long ----->0L
+        etc..
+
+3. Static Variable;
+Declared inside a CLASS but prefixed with static keyword ( WE will leanr this in OOP)
+They DO HAVE DEFAULT VALUE.
+        Int ------>0
+        float ------> 0.0f
+        double------->0.0
+        boolean--->false
+        long ----->0L
+        etc..
+
+
+
+      
+
+
+
+
+
+
+

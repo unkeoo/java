@@ -1,0 +1,29 @@
+Javas Math class 
+
+1. The java language provides us a special class called as math which is present in the package java.lang 
+
+2. As the name suggests the class math provides us some mathematical constants as well as some functions for mathematical calculations.
+
+3. Every member of math class in java is static so to access/use them we just have to prefix them iwth the name of math class.
+
+Syntax
+=======
+
+<class_name>.<member_name>
+
+Example
+=======
+Math.PI
+Math.pow(2,3)
+Math.sqrt(16)
+
+
+
+
+if you need any information about java go to oracle docs 
+
+(1.each class has two members one called static one called instance)
+(2.discussed in oops)
+(3.if member is static use class name)
+(4. if member is instance use class object name)
+
