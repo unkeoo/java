@@ -4,3 +4,29 @@ Class Example2 {
         System.out.println("Square of 5 is " + Math.pow(a : 5,b : 2));
     }
 }
+
+Assignment
+
+----------
+WAP to calc hypostenuse using Pythagoras Theorem/formula. Assume the values of perpendicular and base yourself.
+
+
+
+Accepting input from User
+==========================
+
+two ways 
+
+1. Using command line argument 
+
+2. using Scanner Class
+
+class Example1 {
+    public static void main(String[] args) {
+        System.out.println("Hello "+ args[0]);
+        System.out.println("Have a good day!");
+
+    }
+}
+
+/
