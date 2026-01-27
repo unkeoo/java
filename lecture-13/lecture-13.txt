@@ -1,0 +1,28 @@
+class Example3 {
+    public static void main(String[] args) {
+        int a, b, c;
+        a = Integer.parseInt(args[0]);
+        b = Integer.parseInt(args[1]);
+        c = Integer.parseInt(args[2]);
+        System.out.println("First number is " + a);
+        System.out.println("Second number is " + b);
+        System.out.println("Second number is " +c );
+
+    }
+}
+
+^
+
+How to convertString into int
+=================================
+
+"10"-STRING     10- int
+
+parseInt()-converted string to int                              (static type method)
+
+TO CONVERT ANY STRING INTO INT WE HAVE TO CALL THE METHOD parseInt() BELONGING TO THE CLASS INTEGER
+
+
+
+
+
