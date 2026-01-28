@@ -22,7 +22,66 @@ parseInt()-converted string to int                              (static type met
 
 TO CONVERT ANY STRING INTO INT WE HAVE TO CALL THE METHOD parseInt() BELONGING TO THE CLASS INTEGER
 
+parseInt()- must have numbers or else it wont run, even decimal wont run (will throw an exception called NumberFormatException)
 
 
+How to convert string into double 
+===================================
+
+class name --====> 
+
+method --------> parseDouble()
+
+syntax
+=======
+
+x=Double.parseDouble(...)
+
+Integer------int
+
+Double--------double
 
 
+Short-------short 
+
+
+Character----------char 
+
+
+Boolean-------boolean 
+
+
+Float ------ Float
+
+
+Long ------- long 
+
+(wrapper classes^)
+ 
+in the java.lang package (no need to import)
+
+Use of wrapper class 
+
+1 they help the programmer to covert a value from its string representiation to the actual primitive type
+ for ex : "10" to 10
+
+ done by parseInt()
+
+ for ex "25.2" to 25.2
+
+ done by method parseDouble 
+
+ Integer-----parseInt()
+ Short-----parseShort()
+ Byte--------parseByte()
+ Long------------------ parseLong()
+ Double-------------------- parseDouble()
+Float--------parseFloat()
+Boolean-----------parseBoolean()
+Character------- no parse method
+
+objects are smart variavbles
+
+ 
+
+ 
