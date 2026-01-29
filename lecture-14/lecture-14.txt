@@ -1,0 +1,168 @@
+How do we create objects in java?
+
+objects are used to represent real world items
+
+class Student
+{
+    int roll;
+    char grade;
+    double per;
+    int marks;
+
+}
+
+(in java these are called attributes,properties,instance members)
+
+Syntaxt of creating object
+==========================
+
+<class_name> <reference> = new <class_name> ();
+
+Example
+==========
+Student s=new Student();
+(objects live in a special place in RAM called heap area)(rest code is in stack area)(for now)
+
+
+. ---- is also known as member access operator 
+
+
+Creating object of String Class 
+=================================
+
+
+class Test
+{
+    public static void main(String [] args)
+    {
+        String city1=new String("Bhopal");
+        System.out.println(city1);
+
+        String city2=new String("Bhopal");
+        System.out.println(city2);
+
+        System.out.println(city1==city2);//false because adress of city1 is 1000, and city2 is 1004, its comparing the addresses
+    }
+}
+
+
+class Example1 {
+    public static void main(String [] args){
+        String city1=new String("Bhopal");
+        System.out.println("city1 is" + city1);
+
+        String city2=new String("Bhopal");
+        System.out.println("city2 is" + city2);
+
+        System.out.println("Are city1 and city2 same ? "+ (city1==));
+
+
+    }
+}
+
+
+
+
+
+
+        city is the object reference , bhopal is the string object
+
+
+    Important methods of string class
+    =================================
+
+    1. length():  it is an instance method returns the length of the string on which it is called upon
+
+    String name= new String("Sachin");
+    int x;
+    x=name.length();
+    System.out.println("length of"+name+"is"+x);
+
+    OUTPUT
+    =========
+    length of Sachin is 6
+
+
+    String name= new String("Sachin");
+   
+    System.out.println("length of"+name+"is"+name.length());
+
+    OUTPUT
+    ========
+
+    lenggth of sachine is 6
+
+    2.charAt(): it is an instance method. accepts an index number and returns the character present at that index in the calling object
+
+
+    String name= new String("Sachin");
+    char ch;
+    ch=name.charAt(0);
+    System.out.println(ch);
+    ch=name.charAt(3);
+    System.out.println(ch);
+    ch=name.charAt(10);
+    System.out.println(ch);//will throw exception
+    StringIndexOutOfBoundsException
+
+
+    OUTPUT
+    =====
+s
+h
+
+
+3.equals():  it is an instance method, Accepts a string as argument and compares both the strings (calling, argument) in a case sensitive way, returns true if strings are exactly same, ohterwise false
+
+
+    String city1=new String("Bhopal");
+        System.out.println(city1);
+
+        String city2=new String("Bhopal");
+        System.out.println(city2);
+
+        String city3=new String("bhopal");
+        System.out.println(city3);
+
+        boolean result;
+        result=city1.equals(city2);
+
+        System.out.println(result);//true
+        result=city2.equals(city3);
+
+        System.out.println(result);//false
+
+
+
+4. equalsIgnoreCase:  it is an instance method, Accepts a string as argument and compares both the strings (calling, argument) in a case insensitive way, returns true if strings are exactly same, ohterwise false
+
+        
+System.out.println(city1);
+
+        String city2=new String("Bhopal");
+        System.out.println(city2);
+
+        String city3=new String("bhopal");
+        System.out.println(city3);
+
+        boolean result;
+        result=city1.equals(city2);
+
+        System.out.println(result);//true
+        result=city2.equals(city3);
+
+        System.out.println(result);//true
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
