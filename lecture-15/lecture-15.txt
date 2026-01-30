@@ -1,0 +1,154 @@
+class Example {
+    public static void main(String [] args) {
+        String s1 = new String("Sachin");
+        String s2 = "Sachin"; //this is also doing almost same thing as before but there is an important difference which we will learn later
+        System.out.println(s1.equals(s2));
+    }
+}
+
+
+
+Decision Control Statements
+===============================
+
+The category of if
+==================
+1. if
+2.if-else
+3.if -else if -else
+4. nested if
+
+
+The "swtich" Statement
+=========================
+1.Regular swtich
+2.Modern swtich
+
+
+
+
+Ternary operator
+=================
+
+
+
+Types of "if"
+==============
+
+1. if(test_cond)
+     {
+        ..............
+    
+     }
+
+
+//WAP to accept an int from Command Line Arg and check whether it is pos or neg
+//User will input any number except 0
+
+class Example {
+    public static void main(String[] args) {
+        int n=Integer.parseInt(args[0]);
+        if (n > 0) {
+            System.out.println("The number is Positive");
+        }
+        if (n < 0) {
+            System.out.println("The number is Negative");
+        }
+    }
+}
+
+2.if -else 
+(1.else does not have its own cond because it represents FALSE part of "if")
+(2. else always reqires "if")
+(3. else must begin immediately after "if" finishes)
+
+
+class Example {
+    public static void main(String[] args) {
+        int n=Integer.parseInt(args[0]);
+        if (n > 0) {
+            System.out.println("The number is Positive");
+        }
+        else {
+            System.out.println("The number is Negative");
+        }
+    }
+}
+
+
+3. if else if else
+
+
+class Example {
+    public static void main(String[] args) {
+        int n=Integer.parseInt(args[0]);
+        if (n > 0) {
+            System.out.println("The number is Positive");
+        }
+        else if (n < 0) {
+            System.out.println("The number is Negative");
+        }
+        else (n == 0) {
+            System.out.println("The number is zero");
+        }
+    }
+}
+
+
+
+class Example {
+    public static void main(String[] args) {
+        int n=Integer.parseInt(args[0]);
+        int n1=Integer.parseInt(args[1]);
+        if (n > n1) {
+            System.out.println("the first number is bigger ");
+        }
+        else if (n < n1) {
+            System.out.println("The second number is bigger");
+        }
+        else {
+            System.out.println("The numbers are equal");
+        }
+    }
+}
+
+
+Rules regarding braces used with cond Statement
+====================================================
+ if (test_cond)                                                      
+ {
+    stmt1;
+ }
+ stmt2;
+ stmt3;
+ stmt4;
+
+
+
+if (test_cond)
+ {
+    stmt1;
+ }
+ stmt2;
+ stmt3;
+ stmt4;
+    
+
+
+    Using braces is optional if the body of dec control statment is only of 1 line
+
+
+
+    class Example {
+    public static void main(String[] args) {
+        int n=Integer.parseInt(args[0]);
+        if (n > 0) {
+            System.out.println("The number is Positive");
+            System.out.println("hello");
+        }
+        else {
+            System.out.println("The number is Negative");
+            System.out.println("welcome");
+        }
+    }
+}
