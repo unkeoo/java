@@ -1,0 +1,78 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String name;
+        System.out.println("What is ur name");
+        name = kb.nextLine();
+        System.out.println("GOOD EVENING "+name);
+    }
+}
+
+
+
+TWO METHODS TO READ STRINGS ^ 
+next= single word will be read
+nextLine= Complete line will be read
+
+
+method if you only want one character read 
+=====================================
+
+2 ways - 
+
+
+1.charAt 
+
+import java.util.Scanner;
+class Main{
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        String str;
+        System.out.println("enter character");
+        str = kb.next();
+        char ch;
+        ch=str.charAt(0);
+        System.out.println("Character is "+ch);
+    }
+}
+
+2. read System.in.read
+
+
+
+LOOPS (Iterative Statement)
+==============================
+
+Loop is a programming concept which says that it can repeat its body multiple times until a particular condition remains true.
+
+Types of loops 
+================
+
+Entry controlled loop
+1.while
+2. for
+
+
+Exit controlled loop
+1. do while 
+
+
+
+Syntax of While loop in java
+=========================
+
+
+    while (test_cond)
+    {
+        .......
+
+
+        .......
+    }
+
+    (will run until condition is fullfilled, if condtion doesnt match it wont start)
+    (if you dont put braces it will read only 1 line)
+
+
+

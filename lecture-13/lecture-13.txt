@@ -84,4 +84,24 @@ objects are smart variavbles
 
  
 
+ camel case notation 
+ -==================
+ (make letter capital for next word without spaces)
+
+ ex calculateArea
+
+
+
+ snake case notation
+ ==================
+
+ calculate_area
+
+
+ pascal case notation
+ =================
+
+ CalculateArea 
+
+
  

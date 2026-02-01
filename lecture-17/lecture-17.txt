@@ -1,0 +1,160 @@
+Java modern switch was introduced in Java 12, finalized in Java 14
+
+
+class Example {
+    public static void main(String[] args) {
+        int day= 2
+        switch (day) {
+            case 1->System.out.println("MONDAY");
+
+            case 2-> {
+                System.out.println("TUESDAY");
+                System.out.println("second day");
+            }
+
+            default->System.out.println("wrong input");
+
+            
+            
+        }
+    }
+}
+
+Modern switch has no break
+
+If you want two outputs, add {}
+
+
+for case clubbing syntax is 
+case 1,2,3,4->SOT("");
+
+class Example {
+    public static void main(String[] args) {
+        int day= 2
+        String weekday;
+        weekday=switch (day) {
+            case 1->"MONDAY";
+
+            case 2->{
+                System.out.println("its a weekday");
+                  yield "Tuesday"
+            }
+         
+
+            default->"wrong input"
+
+        };
+        System.out.println("day is "+weekday);
+    }
+}
+
+^CAN ONLY BE DONE WITH MODERN Switch 
+
+
+
+
+Ternary Operator
+=====================
+
+int a,b;
+a=Integer.parseInt(args[0])
+if(a>=0)
+   b=1;
+else
+   b=-1;
+
+
+   syntax
+   ========
+
+<var_name>=( test_cond ) ? (true_st) : (false_st);
+
+
+class Example16 {
+    int a = Integer.parseInt(args[0]);
+    String msg;
+    msg=(a%2==0)  ? "Even number" : "Odd Number";
+    System.out.println(msg);
+
+
+}
+
+
+3 ways to get input
+
+1. command line argument (not gonna use often)
+2. read()(used for inputing char)
+3.scanner (used for any other value as input)
+
+
+Using "Scanner" class
+======================
+
+Used for accepting input from the user 
+
+
+Important methods of scanner class
+======================================
+instance methods
+1.nextInt()
+
+2.nextDouble()
+
+3.nextLong()
+
+Like this scanner has 1 method each for every type except nextChar()
+
+Creating object of scanner class
+==================================
+
+Scanner sc=new Scanner(System.in)        // (System.in) is an input resource- device from which scanner will read the input (INTERVIEW QUESTION)
+
+
+
+class Example {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        System.out.println("Enter ur age");
+        age = kb.nextInt();
+
+        System.out.println("Your age is"+age);
+    }
+}
+
+
+
+import java.util.Scanner;
+class Example {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int a,b;
+        System.out.println("Enter ur integers");
+        a = kb.nextInt();
+        b = kb.nextInt();
+        int c = a + b;
+
+        System.out.println("Sum is "+c);
+    }
+}
+
+
+
+if u give anything but integer it will throw exception called (InputMissMatchException)
+
+
+
+
+
+
+
+System.in.read()
+
+^ 2 restrictions
+(accepts obly 1 value)
+(reads it char)
+
+
+
+
+
+
