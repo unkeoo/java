@@ -72,7 +72,8 @@ Syntax of While loop in java
     }
 
     (will run until condition is fullfilled, if condtion doesnt match it wont start)
-    (if you dont put braces it will read only 1 line)
+    (if you dont put braces it will read only 1 line) 
+    .
 
 
 
