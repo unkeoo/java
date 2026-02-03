@@ -1,0 +1,77 @@
+The do while loop
+====================
+
+Syntax
+=======
+
+do{
+
+
+    ...
+    ...
+}while (test_cond);
+
+needs a semi colon or else syntax error
+
+do while runs at least one time
+
+
+local variables do not appear outside the block (the do while syntax)
+
+
+
+
+
+THE for loop
+
+===========
+
+
+for( init; test_cond ; stmt) {
+    ....
+    ....
+}
+
+if the condition is false it exits the loop.
+
+
+for,while are called entry controlled loops 
+
+import java.util.Scanner;
+public class Example {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int n, fact;
+        System.out.println("Enter an int");
+        n=kb.nextInt();
+        for(fact=1;n>0;n--) {
+            fact=fact*n;
+
+        }
+        System.out.println("Factorial is "+fact);
+
+    }
+}
+
+
+varities of for loop
+=========================
+
+1.init is optional 
+for ( ; test_cond ; stmt)
+{
+    ..........
+    ..........
+}
+
+semi colon is a must
+
+2. statement is optional 
+
+
+
+3. condition is also optional, (IF CONDITION IS BLANK, CONDITION IS ALWAYS TRUE, INFINITE LOOP)
+
+
+
+
