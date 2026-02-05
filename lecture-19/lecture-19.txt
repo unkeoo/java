@@ -71,7 +71,13 @@ semi colon is a must
 
 
 3. condition is also optional, (IF CONDITION IS BLANK, CONDITION IS ALWAYS TRUE, INFINITE LOOP)
+but it can be managed with a break; (break works with every loop)
 
+The continue keyword(only can be used in loops in java)
+=====================
+
+the continue is only available for loops, without loops we cannot use continue
+(continue )
 
 
 

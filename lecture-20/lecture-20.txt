@@ -1,0 +1,48 @@
+The continue keyword(only can be used in loops in java)
+=====================
+
+the continue is only available for loops, without loops we cannot use continue
+(continue )
+
+continue vs break
+
+
+continue will skip the iteration 
+
+break will end the loop 
+
+
+
+Nested loop
+=============
+
+Syntax 
+=======
+
+for ( init ; test_cond ; stmt)
+    {
+        ......
+        ......
+        for (init ; test_cond; stmt) {
+            ........
+            ........
+        }
+    }
+
+
+class Pattern1
+{
+    public static void main(String [] args)
+    {
+        int i,j;
+        for(i=1;i<=3;i++)
+        {
+            for(j=10;j<=15;j++)
+            {
+                System.out.print(j+" ");
+
+            }
+            System.out.println();
+        }
+    }
+}
