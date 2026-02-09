@@ -1,0 +1,106 @@
+Array
+=======
+
+is a collection of homogeneous kinds 
+
+
+But in java Array is an object. 
+
+
+it means:
+
+1. Array is created at run time
+2. Array lives in heap area 
+3.Array also requires a reference and then array object
+4.Array is also created using new keyword
+
+
+SYNTAX OF CREATING AN Array
+=============================
+
+1. Creating array reference
+============================
+
+<data_type> [ ] <array_ref_name>;
+OR
+<data type> <array_ref_name> [ ];
+
+arr is reference to an integer array 
+
+2. Creating actual array
+=============================
+
+
+<array_ref_name>=new <data_type> [size];
+
+if anything is made by the "new" java will initialize it with the data types default value
+
+
+by default an array will be filled with zero
+
+
+int[]arr=new int[10];
+
+OR
+
+int arr[]=new int[10];
+
+Question:
+============
+
+Whats the diff between int [] arr and int arr[ ] ?
+
+Answer:
+=======
+
+No difference 
+
+difference will become visible in this line.
+
+int [] arr,brr; // Both arr and brr are array reference
+
+V/s 
+
+int arr [ ], brr; // in this arr is array ref but brr is a simple int variable 
+
+
+
+import java.util.Scanner;
+
+public class Example {
+    public static void main(String[] args) {
+        String str=new String("Anmol");
+        System.out.println(str.getClass().getName());
+
+    }
+}
+
+
+^ str is the reference 
+
+ ACESSING ARRAY ELEMENTS 
+ ==========================
+
+ SYNTAX 
+ ======
+
+ <array_ref>[ index_no ] = <value>;
+
+ int [ ] arr = new int [10];
+
+ arr[0]=25;   // [] is called a subscript operator  
+ arr[1]=15;
+ arr[2]=70;
+
+ ....
+
+
+System.out.println(arr);// hexadecimal rep of hashcode
+
+
+Inputting values from user in array
+=======================================
+ 
+
+
+
