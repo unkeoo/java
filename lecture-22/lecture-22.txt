@@ -1,0 +1,106 @@
+How java mangages DeAllocation of Dynamic Blocks?
+
+=======================================================
+
+What is dynamic Blocks
+1. object
+2. Array 
+
+Java has automatic memory management
+
+scanner is dynamic, array is dynamic 
+
+
+
+
+
+
+how does java DeAllocate blocks
+1 Garbage Block
+Garbageblocks:
+=================
+Are those dynamic blocks whyich are not being reffered by any reference 
+
+int[] arr=new int[5];     // this array will be not connected to anything after the new array is made, turned into garbage block
+
+
+arr=new int[10]; 
+
+
+2 Garbage Collector 
+
+a. Inside Jvm we have a special software running which is called Garbage
+
+
+b. the major responsibility of the GC is to identify and recollect those dynamic blocks which have become garbage blocks.
+
+c.All this activity keeps on executing in the backround. Thus as a developer we never come to know when JVM activated GC
+, when it Collected the garbage blocks and how the memory was freed 
+
+d.Thats the reason we say in Java memory management ( memory DeAllocation) is always automatic
+without any interference of the programmer.
+
+e. This gc is a very very lazy software. 
+
+
+Initializing an Array 
+=========================
+
+1. 
+
+int [] months=  new int [12];
+months[0]=31;
+months[1]=28;
+months[2]=31;
+.....
+months[11]=31;
+
+
+2. int[]months=new int[ ] {31,28,30,31....31}; //Initializers or Initializer list, size must be left empty or else error
+
+- java will count the values by itself when left empty
+
+3. int[]months={31,28,30,31....31}; // only allowed when reference creation and Initializer list are on one line
+
+4. int[]months;
+months={31,28,30,31....31}; // error
+
+5.int[]months;
+months=new int[ ] {31,28,30,31....31};// now okay
+
+int [] arr={3,11,45,67,89,12,23,31,45,69,98};
+
+System.out.println("size:"+arr.length);//11
+for(int i=0;i<arr.length;i++)
+SOP(arr[i]);
+
+every  array has a property called length which is predefined, gives number of elements in an array
+
+arr.length=10; // cannot be manually assigned 
+
+
+Using "for-each" Loop
+or 
+Using Enhanced for Loop
+
+int [] arr={10,20,30,40,50};
+for(int x:arr){
+    System.out.println(x);
+}
+OUTPUT
+======
+10
+20
+30
+40
+50
+
+
+SYNTAX (for arrays and collections)
+=======
+for( <data_type> var_name>: <array_name>){
+    .....
+    .....
+}
+
+
