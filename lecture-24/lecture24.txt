@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Example
+{
+
+public static void main(String[] args) {
+int[][]arr=new int[3][4];
+Scanner kb=new Scanner(System.in);
+for(int i=0;i<3;i++)
+    for(int j=0;j<4;j++){
+        System.out.println("Enter value:");
+       arr[i][j]=kb.nextInt();
+    }
+}
+System.out.println("You inputed...");
+int sum=0;
+for(int []x:arr){
+    for(int y:x){
+        System.out.println(y+" ");
+        sum=sum+y;
+    }
+    System.out.println();
+}
+System.out.println("sum is "+sum);
+System.out.println("average is "+sum/12.0);
+}
+
+
+
+Jagged 2d array
+===============
+
+Syntax
+=========
+
+<data_type>[ ][ ] <array_ref>=new <data_type>[row_size][ ]; // we have to leave column size blank or else itll turn into rectangular array
+
+Creating actual arrays
+===========================
+
+<array_ref>[row_index_num]=new <data_type>[col_size];
+<array_ref>[row_index_num]=new <data_type>[col_size];
+<array_ref>[row_index_num]=new <data_type>[col_size];
+
+int[][]arr=new int[3][];
+arr[0]=new int[4];
+arr[1]=new int[3];
+arr[2]=new int[5];
+
+

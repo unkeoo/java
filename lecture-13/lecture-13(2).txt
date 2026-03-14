@@ -1,0 +1,19 @@
+How to conmvert String into Int
+=======================================
+
+parseInt 
+
+part of the Integer class , a prefixed class 
+
+parseInt is a predefined method , it converts string to int
+
+parseInt is also a static method 
+
+How to use 
+============
+
+
+a=Integer.parseInt(args[0]);
+b=Integer.parseInt(args[1]);
+
+TO CONVERT ANY STRING INTO INT WE HAVE TO  CALL THE METHOD parseInt BELONGINGTO THE CLASS INTEGER

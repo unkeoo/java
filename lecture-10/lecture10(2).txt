@@ -1,0 +1,95 @@
+Java type casting orders
+=============================
+
+Implicit    (Widening)
+
+byte>short>int>long>float>double
+
+Example
+
+double a;
+a = 15;
+SOP(a);
+15.0
+
+
+Explicit type casting (Narrowing)
+
+byte<short<int<long<float<double
+
+char claims its bigger than byte and short, but byte and short claim to be bigger 
+boolean - incompatible data type
+
+n=(int)2.9;
+SOP(n);
+2
+
+
+off topic- Java will show 16 decimal places only if needed 
+example - 10.0/3.0= 3.333333333333335  but 10.0/5.0= 2.0
+
+
+
+Types of tpye conversion
+===========================
+
+
+1. Type conversion in Assignment 
+
+
+2. Type conversion in expression (Type Promotion)
+ Any statement that contains operand and operator is called expression
+
+ for example 
+ 10+25L 
+
+ Java will convert 10 to 10L because 25L is a long, answer will be 35L
+
+ long+float=float
+
+ float+double=double
+
+
+
+ any combination of byte + short+char will turn into int because Java is optimized for int (FAST)
+
+ an example to be noted
+
+ byte a = 10;
+ byte b= 20;
+ byte c;
+ c=a+b;
+
+SOP(c);
+
+Lossy conversion ( byte a and b will be converted to ints but c isnt part of the expression so, as it assigning with =)
+
+    
+int n= 10;
+byte a= n; 
+
+Lossy conversion because java is scared that the value might be out of range of byte
+
+to avoid ^
+1.
+byte a=10;
+byte b=20;
+byte c;
+c=(byte)(a+b);
+SOP(c);
+
+2.
+byte a=10;
+byte b=20;
+int c;
+c=a+b;
+SOP(c);
+
+
+Value might rotate in method number 1
+
+
+think for answer correctness rather than saving data
+
+
+

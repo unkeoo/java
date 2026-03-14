@@ -1,0 +1,206 @@
+    Relational Operators
+    ======================
+
+    >
+    <
+    >=
+    <=
+    ==
+    !=
+
+
+    1.They all are used for checking conditions 
+    2. They always return their answer as true/false
+
+
+
+    Example
+    =========
+
+    1. System.out.println(5>3);  true // boolean expression
+
+
+    2. System.out.println(6<3);  true
+
+    1.  =   vs   2. ==
+
+1. Assignment operator
+
+int a = 7, b = 10;
+a = b;
+
+value will override and become 10 now 
+
+
+2.equality testing operator
+
+int a = , b = 7;
+int c;
+c= a==b; /false but java will say incompatible types because c is an int and it needs to be a boolean 
+
+
+precedence , == holds a higher precedence than = 
+
+
+
+Logical Operators
+====================
+
+
+&& Logical and
+
+cond1 true && cond2 true  // result is true
+
+cond1 true && cond2 false  // result is false
+
+cond1 false && cond2 true  // result is false
+
+cond1 false && cond2 false // result is false
+
+Example
+ a=10, b=5, c=15;
+SOP(a>b && b>c) // false 
+
+|| Logical or
+
+cond1 true || cond2 false  // result is true
+
+cond1 false || cond2 true  // result is true
+
+cond1 falsE || cond2 false  // result is false
+
+
+cond1 true || cond2 true  // result is true
+
+
+Example
+ a=10, b=5, c=15;
+SOP(a>b || b>c) // true
+
+
+
+! Logical not 
+
+it flips the value // if value is true then itll make it false , and if its false itll turn into true 
+
+NOT only works with booleans
+
+Example 
+boolean a = true;
+System.out.println (!a); // false
+
+
+
+In java in an expression you can only use a single relational Operator 
+
+
+
+Short hand operators
+=======================
+
+
+1. a= a+b
+ or a+=b;
+
+2. x=x-y;
+or x-=y;
+
++=
+-=
+*=
+/=
+%=
+ called short hand operators or compound operators becuase theyre made of two operators
+
+
+
+
+Increment and Decrement Operator 
+
+
+a = a + 1;
+a++;  or ++a; //  these are the same if written in isolation 
+
+
+1. int a = 10;
+a++;
+SOP(a); // 11
+
+
+2. int a = 10;
+++a;
+SOP(a); // 11
+
+
+3.int a = 10,b;
+b=a++;
+SOP(a); // 11
+SOP(b); // 10
+POST Increment (will increase after assiginign and solving)
+
+
+4. 3.int a = 10,b;
+b=a++;
+SOP(a); // 11
+SOP(b); // 11
+PRE Increment  ( will already increase the value before assigning and solving ) 
+
+
+
+Post/ Pre decrement 
+a= a-1;
+
+a--;
+--a;
+
+
+Displaying Value of  Variable 
+public class Main
+{
+	public static void main(String[] args) {
+        int a=10;
+		System.out.println("Value of a is " +a);
+	}
+}
+
+
+The + operator in java plays a double role // addition and joining strings  
+
+
+ANYTHING concatenated with a string becomes a string 
+
+Associativity (When java sees two + it goes left to RIGHT)
+
+
+if u try to use any other operator with a string ("GOOD"-10)
+JAVA will give error bad operand type 
+
+java will not assign any value to a variable unless you have given one.
+
+
+Three types of variables are there in java
+===============================================
+
+1. Local variable :
+ declared inside a method body. they DO NOT HAVE ANY DEFAULT VALUE .
+
+
+2. Instance variable :
+ declared inside a CLASS (we will learn this in OOP). they DO NOT HAVE DEFAULT VALUE .
+ int  --- 0
+ float ----- 0.0f
+ double ----- 0.0
+ boolean ------ false
+ long ------- 0L
+
+
+3. Static variable :
+ declared inside a CLASS but prefixed with static keyword (we will learn this in OOP). they DO NOT HAVE DEFAULT VALUE .
+ int  --- 0
+ float ----- 0.0f
+ double ----- 0.0
+ boolean ------ false
+ long ------- 0L
+
+
+

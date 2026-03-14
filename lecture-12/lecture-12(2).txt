@@ -1,0 +1,59 @@
+Concepts about math class in java
+(IF YOU HAVE ANY QUESTIONS OR NEED INFO ON JAVA GO TO ORACLE DOCS)
+===================================
+
+The java lang provides us a special class called as Math which is present in the pakage java.lang
+
+2. As the name suggests the class Math provides us some mathematical constants as well as some functions for mathematical calculations
+
+3.Every member of math class in java is static so to access/use these members we just have to prefix them with name of Math class.
+
+Every class in java has members, members meaning variables, functions 
+
+Every class has two type of members in java
+
+1. Static(to access u need the class name )
+
+2. Instance (to access you need classes object name )
+
+
+
+Syntax
+========
+
+<class_name>.<member_name>
+
+Example
+==========
+
+Math.PI
+Math.pow(2,3)
+Math.sqrt(16)
+
+TO compile commands- javac (classe name.java)
+
+TO run cmd - java (class name)
+
+
+Accepting input from user 
+===========================
+
+1.Command line Argument 
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		System.out.println("Hello" + args [0]);
+        System.out.println("Have a good day!");
+
+		
+	}
+}
+
+
+
+2. Using scanner class 
+
+
+
